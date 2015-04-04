@@ -1,0 +1,10 @@
+body
+{
+	margin: 0;
+}
+#btn
+{
+	font-size: 30px;
+	padding: 30px;
+	position: absolute;
+}
