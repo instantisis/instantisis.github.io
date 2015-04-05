@@ -19,6 +19,8 @@ function ready() {
 
 	btn.style.left = ((window.innerWidth - btn.clientWidth) / 2) + "px"
 	btn.style.top = ((window.innerHeight - btn.clientHeight) / 2) + "px"
+	allahu.addEventListener("ended", endplay_allahu)
+	nasheed.addEventListener("ended", endplay_nasheed)
 }
 
 function play()
@@ -41,6 +43,17 @@ function play()
 			nasheed.play()
 		}
 	}
+}
+
+function endplay_allahu()
+{
+	allahu.pause()
+	allahu.currentTime = 0
+}
+function endplay_nasheed()
+{
+	nasheed.pause()
+	nasheed.currentTime = 0
 }
 
 function tick()
